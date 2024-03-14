@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <h1 class="logo">Service Management System</h1>
+  </div>
+</nav>
+
+<nav class="sub-navbar">
+  <div class="container">
+    <ul>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Repair</a>
+        <div class="dropdown-content">
+          <a href="tv_repair.html">TV Repair</a>
+          <a href="ac_repair.html">AC Repair</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Cleaning</a>
+        <div class="dropdown-content">
+          <a href="house_cleaning.html">House Cleaning</a>
+          <a href="fridge_cleaning.html">Fridge Cleaning</a>
+        </div>
+      </li>
+      <li><a href="vehicle_repair.html">Vehicle Repair</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="booking-form">
+  <h2>AC Repair Booking</h2>
+  <form id="bookingForm">
+    <label for="dateSlot">Date/Slot:</label>
+    <input type="datetime-local" id="dateSlot" name="dateSlot" required>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" maxlength="100" required></textarea>
+    <label for="vendor">Vendor Selection:</label>
+    <select id="vendor" name="vendor" required>
+      <option value="">Select Vendor</option>
+      <option value="Vendor 1">Vendor 1</option>
+      <option value="Vendor 2">Vendor 2</option>
+      <option value="Vendor 3">Vendor 3</option>
+    </select>
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" readonly>
+    <button type="submit" id="confirmBooking">Confirm Booking</button>
+  </form>
+</div>
+
+<div class="acknowledgment-screen" id="acknowledgmentScreen">
+  <h2>Booking Acknowledgment</h2>
+  <p class="success-message">Service Booked Successfully!</p>
+  <p>Service ID: <span id="serviceId"></span></p>
+  <p>Vendor Name: <span id="vendorName"></span></p>
+  <p>Date/Slot: <span id="bookingDateSlot"></span></p>
+  <p>Amount: $<span id="bookingAmount"></span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
