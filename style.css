@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.sub-navbar {
+  background-color: #ddd;
+  padding: 10px 0;
+}
+
+.logo {
+  color: #fff;
+  margin: 0;
+}
+
+.navbar ul,
+.sub-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li,
+.sub-navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a,
+.sub-navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.sub-navbar ul li {
+  position: relative;
+}
+
+.sub-navbar ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.sub-navbar ul li .dropdown-content a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+}
+
+.sub-navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+.booking-form {
+  width: 80%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form h2 {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.booking-form input[type="datetime-local"],
+.booking-form textarea,
+.booking-form select,
+.booking-form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+.acknowledgment-screen {
+  display: none;
+  width: 80%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+}
+
+.acknowledgment-screen h2 {
+  color: #4caf50;
+}
+
+.success-message {
+  color: #4caf50;
+  font-weight: bold;
+}
+
